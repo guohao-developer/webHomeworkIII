@@ -1,0 +1,135 @@
+/*css文件*/
+/*整体样式*/
+#all{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/*注册界面*/
+#ulFirst{
+	width: 400px;
+	margin-top: 10%;
+	margin-left: 15%;
+	display: inline-block;
+	float: left;
+	border-top:1px solid red;
+	list-style-type: none;
+}
+/*注册成功界面*/
+#ulSecond{
+	width: 350px;
+	margin-top: 20%;
+	margin-left: 15%;
+	display: inline-block;
+	float: right;
+	border-top:1px solid red;
+	list-style-type: none;
+}
+/*用户名边框*/
+#nameBorder{
+	width: 400px;
+	height: 80px;
+	margin-bottom: 3%;
+	border: 2px solid #D3D3D3;
+}
+/*密码边框*/
+#wordBorder{
+	width: 400px;
+	height: 80px;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	border: 2px solid #D3D3D3;
+}
+/*用户名输入框*/
+#userName{
+	width: 400px;
+	height: 60px;
+	margin: auto;
+	border-top:1px solid red;
+	display: inline-block;
+}
+/*密码输入框*/
+#userWord{
+	width: 400px;
+	height: 20px;
+	border:1px solid red;
+	display: inline-block;
+}
+/*用户名输入框*/
+#nameInput{
+	margin: auto;
+	width: 250px;
+	height: 40px;
+	margin-top: 5%;
+	margin-left: -30%;
+	font-size: 25px;
+	display: inline-block;
+}
+/*密码输入框*/
+#wordInput{
+	margin: auto;
+	width: 250px;
+	height: 40px;
+	margin-top: 5%;
+	margin-left: -30%;
+	font-size: 25px;
+	display: inline-block;
+}
+input{
+	outline: none;
+
+}
+/*用户名提示信息*/
+#messageName{
+	width: 400px;
+	color: #D3D3D3;
+	text-align: left;
+	margin: auto;
+	display: inline-block;
+}
+/*密码提示信息*/
+#messageWord{
+	width: 400px;
+	color: #D3D3D3;
+	text-align: left;
+	margin: auto;
+	display: inline-block;
+}
+/*文字样式*/
+.innerSet{
+	width: 100px;
+	margin-top: 8%;
+	margin-left: 5%;
+	margin-right: 20%;
+	color: black;
+	text-align: left;
+	float: left;
+	display: inline-block;
+}
+/*立即注册按钮*/
+#signUp{
+	width: 400px;
+	height: 60px;
+	margin-top: 3%;
+	color: white;
+	background-color: red;
+	border: 2px solid red;
+}
+/*注册成功后的显示界面*/
+#ulSecond{
+	color: red;
+
+}
+.success{
+	text-align: left;
+}
+#successNews{
+	margin-top: 1%;
+}
+#successName{
+	margin-top: 10%;
+}
+#successWord{
+	margin-top: 10%;
+}

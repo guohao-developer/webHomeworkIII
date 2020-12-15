@@ -1,0 +1,72 @@
+
+.logo{
+	width: 1200px;
+	height: 100px;
+	margin: 0 auto;
+}
+a{
+	color: black;
+}
+.nav{
+	width: 700px;
+	height: 100px;
+	position: relative;
+	display: inline-block;
+}
+.nav-menu{
+	font-size: 12px;
+	padding-left: 30px;
+	line-height: 100px;
+	float: left;	
+	display: inline-block;
+}
+.nav-menu ul{
+	display: none;
+}
+.nav-menu:hover ul{
+	display: block;
+}
+/*.nav-menu ul{
+	width: 60px;
+	height: 100px;
+}
+.nav-deputy{
+	width: 60px;
+	height: 15px;
+	color: black;
+	display: none;
+}
+.nav-deputy a{
+	display: block;
+}
+.nav-menu:hover > ul{
+	display: block;
+}*/
+
+.search{
+	width: 632px;
+	height: 108px;
+	margin: 0 auto;
+	position: absolute;
+	top: 75%;
+	left: 30%;
+	background-color: rgba(0,0,0,0.6);
+}
+.search-form{
+	margin-top: 20px;
+	z-index: 1;
+}
+.search-button{
+	margin-left: 20px;
+}
+.search-font{
+	color: white;
+	font-size: 14px;
+
+}
+.search-blank{
+	width: 632px;
+	height: 46px;
+	margin-top: 10px;
+}
+
