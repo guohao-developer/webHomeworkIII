@@ -1,0 +1,139 @@
+<!-- html文件 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="正式用.css">
+</head>
+<body>
+	<div id="all">
+		<ul id="ulFirst">
+			<div id="nameBorder">
+				<li id="userName">
+					<p class="innerSet">用 户 名   </p>
+					<form>
+						<input style="border:none;" onfocus="focusSetName()" onblur="blurSetName()" type="text" name="" id="nameInput" >
+					</form>
+
+					
+				</li>
+
+			</div>
+
+			<li id="messageName"></li>
+
+			<div id="wordBorder">
+				<li id="userWord">
+					<p class="innerSet">设置密码</p>
+					<form action="">
+						<input style="border:none;" onfocus="focusSetWord()" onblur="blurSetWord()" type="password" name="" id="wordInput" >
+					</form>
+					
+				</li>
+			</div>
+
+			<li id="messageWord"></li>
+
+			<div id="signUp">
+				<li id="signUpBtn">
+					<form action="">
+						<input type="button" name="" value="立即登录" style='background-color:red;width: 400px;height: 60px;' onclick="clickSuccess()">
+					</form>
+					
+				</li>
+			</div>
+			
+		</ul>
+
+		<ul id="ulSecond" onclick="clickSuccess()">
+			<li id="successNews" class="success"></li>
+			<li id="successName" class="success"></li>
+			<li id="successWord" class="success"></li>
+		</ul>
+	</div>
+</body>
+<script type="">
+	window.onload = function() {
+		//为用户名的文本框设置初始格式
+		var textBorFirst=document.getElementById("messageName");
+		var textConFirst=document.createTextNode("   ");
+		textBorFirst.appendChild(textConFirst);
+		//为密码的文本框设置初始格式
+		var textBorSecond=document.getElementById("messageWord");
+		var textConSecond=document.createTextNode("   ");
+		textBorSecond.appendChild(textConSecond);
+		//为注册成功的文本框设置初始格式
+		var newsElement=document.getElementById("successNews");
+		var newsTip=document.createTextNode("   ");
+		newsElement.appendChild(newsTip);
+		//为用户名注册成功的文本框设置初始格式
+		var nameElement=document.getElementById("successName");
+		var nameTip=document.createTextNode("   ");
+		nameElement.appendChild(nameTip);
+		//为密码注册成功的文本框设置初始格式
+		var wordElement=document.getElementById("successWord");
+		var wordTip=document.createTextNode("   ");
+		wordElement.appendChild(wordTip);
+	};
+
+	//用户名文本框获得焦点时提示文本：“支持中文数字”  
+	function focusSetName(){
+		//获取提示信息框
+		var focusTextElement=document.getElementById("messageName");
+		//获取提示信息框的文本框
+		var focusTextTip=focusTextElement.childNodes[0];
+		//改变提示信息
+		focusTextTip.nodeValue="支持中文数字";
+	}
+	//用户名文本框失去焦点时，若文本框为空提示文本：“用户名不能为空”
+	function blurSetName(){
+		var blurTextElement=document.getElementById("messageName");
+		var blurValueName=document.getElementById("nameInput").value;
+		var blurTextTip=blurTextElement.childNodes[0];
+		if (blurValueName=="") {
+			blurTextTip.nodeValue="用户名不能为空"
+		}else{
+			blurTextTip.nodeValue="  ";
+		}
+	}
+
+	//设置密码文本框获得焦点时提示文本：“建议使用两种字符组合”
+	function focusSetWord(){
+		var focusWordElement=document.getElementById("messageWord");
+		var focusWordTip=focusWordElement.childNodes[0];
+		focusWordTip.nodeValue="建议使用两种字符组合";
+	}
+	//设置密码文本框失去焦点时，若文本框为空提示文本：“密码不能为空”
+	function blurSetWord(){
+		var blurWordElement=document.getElementById("messageWord");
+		var blurValueWord=document.getElementById("wordInput").value;
+		var blurTextTip=blurWordElement.childNodes[0];
+		if (blurValueWord=="") {
+			blurTextTip.nodeValue="密码不能为空";
+		}else{
+			blurTextTip.nodeValue="   ";
+		}
+	}
+	//点击立即注册后的动作
+	function clickSuccess(){
+		var successNewsElement=document.getElementById("successNews");
+		var successNewsValue=successNewsElement.childNodes[0];
+
+		var successNameElement=document.getElementById("successName");
+		var successNameValue=successNameElement.childNodes[0];
+
+		var successWordElement=document.getElementById("successWord");
+		var successWordValue=successWordElement.childNodes[0];
+
+		var valueName=document.getElementById("nameInput").value;
+		var valueWord=document.getElementById("wordInput").value;
+		
+		if (valueWord!="" && valueName!="") {
+			successNewsValue.nodeValue="注册成功";
+			successNameValue.nodeValue="用户名："+valueName;
+			successWordValue.nodeValue="密码为："+valueWord;
+			blurTextTip.nodeValue="密码不能为空";
+		}
+	}
+</script>
+</html>
