@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web大作业</title>
+	<link rel="stylesheet" type="text/css" href="../css/1.web大作业.css">
+	<link rel="stylesheet" href="../css/2.清除浮动.css">
+	<link rel="stylesheet" href="../css/3.重置样式.css">
+</head>
+<body>
+	<!-- logo图 -->
+	<div class="logo clear">
+
+		<div class="logotc">
+			<img src="../图片/logo.png" id="logo" >
+		</div>
+		<!-- 首页导航 -->
+	 	<div class="nav clear"> 
+			<ul class="clear clear">
+				<li class="nav-menu" style="background-color: #ff9d00;">
+					<a href="#">首页</a>
+				</li>
+
+				<li class="nav-menu">
+					<a href="#">走进河北</a> 
+					<span class="arron-down"></span>
+
+					<ul>
+						<li class="nav-deputy"><a href="#">关于河北</a></li>
+						<li class="nav-deputy"><a href="#">标志景点</a></li>
+						<li class="nav-deputy"><a href="#">自然与动物</a></li>
+						<li class="nav-deputy"><a href="#">科研与保护</a></li>
+						<li class="nav-deputy"><a href="#">宗教习俗</a></li>
+						<li class="nav-deputy"><a href="#">河北文艺</a></li>
+					</ul>
+					
+				</li>
+
+				<li class="nav-menu">
+					<a href="#">最新动态</a>
+					<span class="arron-down"></span>
+					<ul>
+						<li class="nav-deputy"><a href="#">景区新闻</a></li>
+						<li class="nav-deputy"><a href="#">旅游公告</a></li>
+						<li class="nav-deputy"><a href="#">每日旅游人数</a></li>
+						<li class="nav-deputy"><a href="#">各地采购公告</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-menu">
+					<a href="#">旅游产品</a>
+					<span class="arron-down"></span>
+					<ul>
+						<li class="nav-deputy"><a href="#">摄影之旅</a></li>
+						<li class="nav-deputy"><a href="#">生态之旅</a></li>
+						<li class="nav-deputy"><a href="#">藏情之旅</a></li>
+						<li class="nav-deputy"><a href="#">科普之旅</a></li>
+						<li class="nav-deputy"><a href="#">发现之旅</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-menu">
+					<a href="#">智慧服务</a>
+					<span class="arron-down"></span>
+					<ul>
+						<li class="nav-deputy"><a href="#">到达方式</a></li>
+						<li class="nav-deputy"><a href="#">票务信息</a></li>
+						<li class="nav-deputy"><a href="#">自助线路</a></li>
+						<li class="nav-deputy"><a href="#">住宿推荐</a></li>
+						<li class="nav-deputy"><a href="#">游玩方式</a></li>
+						<li class="nav-deputy"><a href="#">本地特色</a></li>
+						<li class="nav-deputy"><a href="#">购物体验</a></li>
+						<li class="nav-deputy"><a href="#">FAQ</a></li>
+						<li class="nav-deputy"><a href="#">站内搜索</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-menu">
+					<a href="#">全域旅游</a>
+					<span class="arron-down"></span>
+					<ul>
+						<li class="nav-deputy"><a href="#">全域概况</a></li>
+						<li class="nav-deputy"><a href="#">全域景区</a></li>
+						<li class="nav-deputy"><a href="#">优品质旅游联盟</a></li>
+						<li class="nav-deputy"><a href="#">最美黄金旅游走廊</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-menu">
+					<a href="#">专栏</a>
+					<span class="arron-down"></span>
+					<ul>
+						<li class="nav-deputy"><a href="#">视频</a></li>
+						<li class="nav-deputy"><a href="#">精彩活动</a></li>
+						<li class="nav-deputy"><a href="#">党政专题</a></li>
+					</ul>
+				</li>
+
+				<li class="nav-menu">
+					<a href="#" onclick="dateNow()">当地时间</a>
+				</li>
+
+			</ul>
+			
+		</div> 
+		<!-- 登录及注册 -->
+		<div class="login clear">
+			<ul>
+				<li><a href="#"><img src="../图片/login-weibo.png"></a></li>
+				<li><a href="#"><img src="../图片/login-wechat.png"></a></li>
+				<li><a href="#"><img src="../图片/login-qq.png"></a></li>
+				<li class="login-sign"><a onclick="alertLog(e)" href="../登录及注册界面/正式用 - 登录.html" >登录</a></li>
+				<li class="login-sign" style="border-left: 1px solid;"><a onclick="alertLog(e)" href="../登录及注册界面/正式用注册.html">注册</a></li> 
+			</ul>
+		</div>
+	</div>
+
+	<!-- 轮播图 -->
+	<div class="banner">
+		<ul id="banner_ul" style="transform: translate(0px);">		
+			<li > <img id="banner_list" src="../图片/banner1.gif" alt=""> </li>
+		</ul>	
+	</div>
+
+	<div class="search">
+
+		<div class="search-blank clear">
+			<div class="search-first">
+				<input class="search-blank-left" id="inputValue" type="text" name="text" placeholder="搜目的地/攻略/酒店/旅行特价">
+							
+				<span  onclick="clickA()">
+					<img class="img-first" src="../图片/search-first.png">
+				</span>
+			</div>
+		</div>
+
+	</div>	
+	<!-- 下层菜单 -->
+	<div class="menu">
+		<ul class="menu-follow">   
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">自由行</a></p>
+				<img class="menu-img" src="../图片/menu-first.png">
+				<p class="menu-font-second">旅行就要更自在</p>
+				
+			</li>
+
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">跟团游</a></p>
+				<img class="menu-img" src="../图片/menu-second.png">
+				<p class="menu-font-second">行程透明省心游</p>			
+				
+			</li>
+
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">当地游</a></p>
+				<img class="menu-img" src="../图片/menu-third.png">
+				<p class="menu-font-second">最地道的玩法体验</p>			
+				
+			</li>
+
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">机票</a></p>
+				<img class="menu-img" src="../图片/menu-forth.png">	
+				<p class="menu-font-second">特惠一折起</p>	
+						
+			</li>
+
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">订酒店</a></p>
+				<img class="menu-img" src="../图片/menu-fifth.png">
+				<p class="menu-font-second">特惠一折起</p>	
+							
+			</li>
+
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">签证</a></p>
+				<img class="menu-img" src="../图片/menu-sixth.png" alt="">
+				<p class="menu-font-second">出签率高服务佳</p>			
+				
+			</li>
+
+			<li class="menu-all">
+				<p class="menu-font-first"><a href="#">游轮</a></p>
+				<img class="menu-img" src="../图片/menu-seventh.png">	
+				<p class="menu-font-second">移动的海上城堡</p>
+			</li>
+
+		</ul>
+	</div>
+	<!-- 旅行日记 -->
+	<div class="introduction">
+		<div class="hebei-travel">
+			<a href="#">
+				<p id="introduction_font">
+					河北游知识安全提示
+				</p>
+			</a>
+		</div>
+		<div class="hottest">
+
+			<div class="hottest-left">
+				<span><a href="#">热门景点</a></span>
+			</div>
+
+			<div class="hottest-left">
+				<span><a href="#">最新动态</a></span>
+			</div>
+
+		</div>
+	</div>
+	<!-- 风景介绍 -->
+	<div class="brief-introduction">
+		<div class="brief-left">
+			<h4>张北大草原</h4>
+			<img src="../图片/traveler-first.jpeg">
+			<span>塞外风光 这里独好</span>
+			<p>
+				张北草原由中都和安固里两大草原组成，是锡林郭勒草原的一部分。这里还是皇家狩猎、避暑之地，每年夏季，水草丰美，繁花遍地。游客可以策马扬鞭，弯弓射箭，一展万丈豪情；也可以观看马术、摔跤、草原歌舞等草原传统娱乐项目。
+			</p>
+		</div>
+
+		<div class="brief-right">
+
+			<div class="top" onclick="border_Zero()" onmouseleave="border_leave()" id="border_bottom0">
+				<img class="top-img" src="../图片/太舞滑雪小镇.jpeg">
+				<div class="font-top">
+					<a href="#">太舞滑雪小镇 | 难以忘记 初次见你</a>	
+					<p>
+						太舞滑雪场总规划200条雪道初、中、高级占比3:4:3，既能保证专业的竞技赛事，又能满足初、中级爱好者的上雪需求。
+					</p>
+					<div class="font-bottom">
+						<img class="first" src="../图片/定位.png">
+						<span>崇礼</span>
+						<img class="first" src="../图片/liulan.png">
+						<span>3802/13</span>
+						<img class="second" src="../图片/ding.png">
+						<span class="second-font" style="color: #ff9d00;">
+							118
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="border_outer" left="500px" id="borderDiv0">
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60px" color=#987cb9 SIZE=3 class="box" left="30px">
+			</div>
+			<div class="top" onclick="border_First()" onmouseleave="border_leave()" id="border_bottom1">
+				<img class="top-img" src="../图片/富龙滑雪山地度假区.jpeg">
+				<div class="font-top">
+					<a href="#">富龙滑雪山地度假区 | 难以忘记 初次见你</a>	
+					<p>
+						这里是崇礼第一家开放夜场和实现住宅与滑雪道无缝对接、真正滑进滑出的滑雪度假区。
+					</p>
+					<div class="font-bottom">
+						<img class="first" src="../图片/定位.png">
+						<span>崇礼</span>
+						<img class="first" src="../图片/liulan.png">
+						<span>3802/13</span>
+						<img class="second" src="../图片/ding.png">
+						<span class="second-font" style="color: #ff9d00;">
+							118
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="border_outer" left="500px" id="borderDiv1">
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60px" color=#987cb9 SIZE=3 class="box" left="30px">
+			</div>
+		</div>
+	</div>
+
+	<div class="brief-introduction">
+		<div class="brief-left">
+			<h4>金山岭长城</h4>
+			<img src="../图片/traveler-first.jpeg">
+			<span>雄伟长城 盘旋山脊</span>
+			<p>
+				金山岭长城位于承德市滦平县与北京市密云县交界处，距离北京市区约130公里，是由明代抗倭名将戚继光亲自主持修建的一段长城。这段长城依附重重山峦而建，逶迤曲折，登上长城，视野非常开阔壮观，是明代长城中景色最为秀美雄壮的一段。
+			</p>
+		</div>
+
+		<div class="brief-right">
+
+			<div class="top" onclick="border_Second()" onmouseleave="border_leave()" id="border_bottom2">
+				<img class="top-img" src="../图片/承德避暑山庄.jpeg">
+				<div class="font-top">
+					<a href="#">承德避暑山庄 | 避暑圣地 承德山庄</a>	
+					<p>
+						承德避暑山庄又名“承德离宫”或“热河行宫”，是世界文化遗产、国家AAAAA级旅游景区、中国四大名园之一，是清朝皇帝的夏宫，现存最大的古典皇家园林。
+					</p>
+					<div class="font-bottom">
+						<img class="first" src="../图片/定位.png">
+						<span>承德</span>
+						<img class="first" src="../图片/liulan.png">
+						<span>3802/13</span>
+						<img class="second" src="../图片/ding.png">
+						<span class="second-font" style="color: #ff9d00;">
+							118
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="border_outer" left="500px" id="borderDiv2">
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60px" color=#987cb9 SIZE=3 class="box" left="30px">
+			</div>
+
+			<div class="top" onclick="border_Third()" onmouseleave="border_leave()" id="border_bottom3">
+				<img class="top-img" src="../图片/白石山世界地质公园.jpeg">
+				<div class="font-top">
+					<a href="#">白石山世界地质公园 | 地质奇观 世界公园</a>	
+					<p>
+						漫步峰林，体验国内最长最高玻璃栈道，园区内植被茂密，动植物种类繁多，是华北地区的物种多样性中心区之一，还分布有辽代阁院寺、唐代兴文阁、明代长城等重要的历史文物古迹
+					</p>
+					<div class="font-bottom">
+						<img class="first" src="../图片/定位.png">
+						<span>涞源</span>
+						<img class="first" src="../图片/liulan.png">
+						<span>3802/13</span>
+						<img class="second" src="../图片/ding.png">
+						<span class="second-font" style="color: #ff9d00;">
+							118
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="border_outer" left="500px" id="borderDiv3">
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60px" color=#987cb9 SIZE=3 class="box" left="30px">
+			</div>
+
+		</div>
+	</div>
+
+	<div class="brief-introduction" style="padding-top: 15px;">
+		<div class="brief-left">
+			<h4>正定隆兴寺</h4>
+			<img src="../图片/正定隆兴寺.jpeg">
+			<span>千年古刹 佛韵悠然</span>
+			<p>
+				隆兴寺原为东晋十六国时期后燕慕容熙的龙腾苑，隋文帝开皇六年（586年）在苑内改建寺院，时称龙藏寺。唐改称隆兴寺。隆兴寺有六最：中国现存古代建筑极品摩尼殿 ；中国孤例:五彩悬塑自在观音像 ；中国古代最精美铜铸毗卢佛；中国现存最早楷书碑刻 ；中国最古老、最大转轮藏；世界上古代铜铸佛像中最高大、最古老的观世音像 。
+
+			</p>
+		</div>
+
+		<div class="brief-right">
+
+			<div class="top" onclick="border_Forth()" onmouseleave="border_leave()"  id="border_bottom4">
+				<img class="top-img" src="../图片/草原天路(桦皮岭).jpeg">
+				<div class="font-top">
+					<a href="#">草原天路(桦皮岭) | 草原之上 天路之中</a>	
+					<p>
+						草原天路因其景色丰富多样，也被称为“中国的66号公路”。这条地处坝上草原的公路两旁景色十分优美，草原、风车、梯田、村落、岩壁和桦树林完美交融。
+					</p>
+					<div class="font-bottom">
+						<img class="first" src="../图片/定位.png">
+						<span>张家口</span>
+						<img class="first" src="../图片/liulan.png">
+						<span>3802/13</span>
+						<img class="second" src="../图片/ding.png">
+						<span class="second-font" style="color: #ff9d00;">
+							118
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="border_outer" left="500px" id="borderDiv4">
+			<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60px" color=#987cb9 SIZE=3 class="box" left="30px">
+			</div>
+
+			<div class="top" onclick="border_Fifth()" onmouseleave="border_leave()" id="border_bottom5">
+				<img class="top-img" src="../图片/月坨岛.jpeg">
+				<div class="font-top">
+					<a href="#">月坨岛 | 弯月之地 天然浴场</a>	
+					<p>
+						因呈弯月状而得名，是天然的浴场和生态旅游度假区，也是中国最美的八个海岛之一。海滩沙质细腻，岛上是一片荷兰风情园，红顶小木屋、风车、郁金香令人流连忘返。
+					</p>
+					<div class="font-bottom">
+						<img class="first" src="../图片/定位.png">
+						<span>唐山</span>
+						<img class="first" src="../图片/liulan.png">
+						<span>3802/13</span>
+						<img class="second" src="../图片/ding.png">
+						<span class="second-font" style="color: #ff9d00;">
+							118
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="border_outer" left="500px" id="borderDiv5">
+				<HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="60px" color=#987cb9 SIZE=3 class="box" left="30px">
+			</div>
+			
+
+		</div>
+	</div>
+	<!-- 版权声明 -->
+	<div class="copyright ">
+		<div class="copyright-left">
+		<div class="copyright-nav" style="margin-left: 7%;">
+			<ul>
+				<li>FAQ</li>
+				<li>景区概况</li>
+				<li>门票预订</li>
+				<li>紧急电话</li>
+				<li>医疗信息</li>
+			</ul>
+		</div>
+		<div class="copyright-nav">
+			<ul>
+				<li>生态之旅</li>
+				<li>发现之旅</li>
+				<li>藏情之旅</li>
+				<li>摄影之旅</li>
+				<li>传统节庆</li>	
+			</ul>
+		</div>
+		<div class="copyright-nav">
+			<ul>
+				<li>如何到达</li>
+				<li>住在哪里</li>
+				<li>游玩指南</li>
+				<li>机票预订</li>
+				<li>深度体验</li>	
+			</ul>
+		</div>
+		<div class="copyright-nav">
+			<ul>
+				<li>文化和旅游部</li>
+				<li>河北省人民政府</li>
+				<li>石家庄市人民政府</li>
+				<li>张家口市人民政府</li>
+				<li>唐山市人民政府</li>
+					
+			</ul>
+		</div>
+		<div class="copyright-nav">
+			<ul>
+				<li>太舞滑雪小镇</li>
+				<li>富龙滑雪山地度假区</li>
+				<li>承德避暑山庄</li>
+				<li>白石山世界地质公园</li>
+				<li>草原天路</li>
+			</ul>
+		</div>
+	</div>
+		<div class="honor">
+			
+		</div>
+		<div class="copyright-bottom">
+			<p>
+				不良与违法信息举报电话：0313-xxxxxxx，举报邮箱：xxxxxx@xxx.com
+			</p>
+			<p class="jubao">
+				<a href="#">中国互连网举报中心</a>
+				<a href="#">河北省互连网举报中心</a>
+			</p>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var banner_ul=document.getElementById('banner_ul');
+	var banner_list=document.getElementById("banner_list");
+	var introduction_font=document.getElementById('introduction_font');
+	var borderNum=[0,1,2,3,4,5];
+	var borderName="border_bottom";
+	var isgo=false;
+	var count=0;//记录可变边框的宽度
+	var devition_first=500;
+	var devition_second=500;
+	var n=0;
+	var timer;
+	//图标自动旋转
+	var logo=document.getElementById('logo');
+	var current = 0;
+	var rotateval=0;
+	var logoTimer;
+	window.onload=function(){
+		start();
+		document.getElementById('logo').onmouseover=function(){
+			clearInterval(logoTimer);
+		}
+		document.getElementById('logo').onmouseleave=function(){
+			start()
+		}
+		function start(){
+			logoTimer=setInterval(function(){		
+				rotateval+=1;
+				logo.style.transform='rotate('+rotateval+'deg)'
+				logo.style.transition = '0.1s linear'
+			},20)
+		}
+		
+	}
+	//自动更换banner图
+	function bannerRotation() {
+		intervalId=setInterval(function(){
+			banner_ul.innerHTML='<li > <img id="banner_list" src="../图片/banner'+count+'.gif" alt=""> </li>'
+			count=(count+1)%9;
+		},3000);
+	}
+	bannerRotation();
+	//图片底部线框动态效果
+	function border_Zero(){
+		n=0;
+		border_Selected();
+	}
+	function border_First(){
+		n=1;
+		border_Selected();
+	}
+	function border_Second(){
+		n=2;
+		border_Selected();
+	}
+	function border_Third(){
+		n=3;
+		border_Selected();
+	}
+	function border_Forth(){
+		n=4;
+		border_Selected();
+	}
+	function border_Fifth(){
+		n=5;
+		border_Selected();
+	}
+
+	function border_Selected(){
+		var borderDiv=document.getElementById("borderDiv"+borderNum[n]);
+		
+		timer=setInterval(function(){
+			if(devition_second<1250){
+				++devition_first;
+				borderDiv.style.left=devition_first+"px";
+				devition_second++;
+			}else if(devition_second<2000){
+				--devition_first;
+				borderDiv.style.left=devition_first+"px";
+				++devition_second;
+			}else if(devition_second>=2000){
+				devition_first=500;
+				devition_second=500;
+			}
+
+		},10);
+	}
+	function border_leave(){
+		var borderDiv=document.getElementById("borderDiv"+borderNum[n]);
+		
+		borderDiv.style.left=520+"px";
+		devition_first=500;
+		devition_second=500;
+		clearInterval(timer);                                         
+	}
+	//在搜索框中输入东西，点击搜索图标，弹出确认框，确认刷新页面，取消删除搜索框内容
+	function clickA(){
+		
+		if (window.confirm("你确定搜索"+document.getElementById("inputValue").value+"?")) {
+			window.location.reload()
+		}else{
+			document.getElementById("inputValue").value="";
+		}
+		
+		
+	}
+	
+	//获取本地时间
+	function dateNow(){
+		var date=new Date();
+		var month=["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
+		var time;
+		
+		time=date.getFullYear()+"年"+month[date.getMonth()]+date.getDate()+"日"+date.getHours()+"时"+date.getMinutes()+"分"+date.getSeconds()+"秒";
+		window.confirm("当前时间为："+time);
+	}
+</script>
+</html>	
